@@ -11,16 +11,25 @@
 
 **Ribeirão Preto** sits in the northeastern interior of São Paulo state,
 approximately 313 km from the capital. Known as the *"Brazilian California"*
-for its agricultural wealth, it is one of Brazil's highest-HDI cities and a
-major hub for agribusiness, healthcare, and technology.
+for its agricultural wealth, it is a major hub for agribusiness, healthcare,
+and technology, with GDP per capita among the highest in the country's interior.
 
-| Fact | Value |
-|---|---|
-| Population (2024 est.) | ~711,000 |
-| Area | 650 km² |
-| State | São Paulo |
-| Coordinates | 21.17°S, 47.81°W |
-| Economy | Sugarcane, soy, healthcare, tech |
+| Fact | Value | Source |
+|---|---|---|
+| Population estimate (2024) | 728,400 | IBGE |
+| Population (Censo 2022) | 698,642 | IBGE |
+| Population (Censo 2010) | 604,682 | IBGE |
+| Territorial area | 650.916 km² | IBGE |
+| Population density (2022) | 1,073 hab/km² | IBGE |
+| GDP per capita (2023) | R$ 74,869 | IBGE |
+| State | São Paulo | — |
+| Coordinates | 21.17°S, 47.81°W | — |
+| Economy | Sugarcane, soy, healthcare, tech | — |
+
+Population grew **+15.5 %** between the 2010 and 2022 Censuses (+94,000 people),
+reaching an estimated 728,400 by 2024. This sustained demographic pressure —
+averaging roughly 7,800 new residents per year — is the primary driver of the
+land-cover changes captured in the satellite record below.
 
 The surrounding landscape is dominated by **sugarcane** and soy plantations —
 making urban greenery within city limits particularly valuable, and particularly
@@ -183,6 +192,7 @@ outputs/
 | [Landsat Collection 2 L2](https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products) | Surface reflectance, Landsat 8/9 | Public domain (USGS/NASA) |
 | [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | STAC API and COG hosting | CC-BY |
 | [OpenStreetMap / Nominatim](https://nominatim.openstreetmap.org/) | City boundary polygon | © OpenStreetMap contributors, ODbL |
+| [IBGE — Serviço de Dados](https://servicodados.ibge.gov.br/) | Population (Censos 2010/2022), estimates 2015/2024, area, GDP per capita | Public domain (Brazilian government) |
 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bandeira_de_Ribeir%C3%A3o_Preto.svg) | City flag | Public domain |
 
 ---
