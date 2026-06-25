@@ -50,6 +50,13 @@ DRY_END    = "08-31"
 MAX_CLOUD  = 40        # % — slightly lenient: Landsat revisits every 16 days, ~2 scenes/month
 OUT        = Path("outputs")
 
+# NDVI class boundaries follow:
+#   Tucker, C. J. (1979). Red and photographic infrared linear combinations for
+#   monitoring vegetation. Remote Sensing of Environment, 8(2), 127–150.
+#   https://doi.org/10.1016/0034-4257(79)90013-0
+# and summarised by the NASA Earth Observatory:
+#   Weier, J. & Herring, D. (2000). Measuring Vegetation (NDVI & EVI).
+#   https://earthobservatory.nasa.gov/features/MeasuringVegetation
 CLASSES: List[Tuple] = [
     ("Water / shadow",     -1.00,  0.00, "#1a6aa8"),
     ("Bare soil / urban",   0.00,  0.20, "#c9a227"),

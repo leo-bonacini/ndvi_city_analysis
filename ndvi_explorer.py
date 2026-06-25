@@ -180,6 +180,13 @@ def compute_ndvi(nir: np.ndarray, red: np.ndarray) -> np.ndarray:
 
 
 # NDVI class boundaries, labels, colours
+# Thresholds follow the standard scheme described in:
+#   Tucker, C. J. (1979). Red and photographic infrared linear combinations for
+#   monitoring vegetation. Remote Sensing of Environment, 8(2), 127–150.
+#   https://doi.org/10.1016/0034-4257(79)90013-0
+# and summarised by the NASA Earth Observatory:
+#   Weier, J. & Herring, D. (2000). Measuring Vegetation (NDVI & EVI).
+#   https://earthobservatory.nasa.gov/features/MeasuringVegetation
 _CLASSES = [
     ("Water / no data",    -1.00,  0.00, "#1a6aa8"),
     ("Bare soil / urban",   0.00,  0.20, "#c9a227"),

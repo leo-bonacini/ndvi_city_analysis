@@ -70,6 +70,8 @@ NDVI = (NIR − Red) / (NIR + Red)
 | 0.40 – 0.60 | Moderate vegetation |
 | 0.60 – 1.00 | Dense vegetation |
 
+Class thresholds follow Tucker (1979) and the classification scheme summarised by the NASA Earth Observatory (Weier & Herring, 2000) — see [References](#references).
+
 Pixels are clipped to the **official city boundary polygon** — no square bounding box.
 
 ---
@@ -194,6 +196,13 @@ outputs/
 | [OpenStreetMap / Nominatim](https://nominatim.openstreetmap.org/) | City boundary polygon | © OpenStreetMap contributors, ODbL |
 | [IBGE — Serviço de Dados](https://servicodados.ibge.gov.br/) | Population (Censos 2010/2022), estimates 2015/2024, area, GDP per capita | Public domain (Brazilian government) |
 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bandeira_de_Ribeir%C3%A3o_Preto.svg) | City flag | Public domain |
+
+---
+
+## References
+
+- Tucker, C. J. (1979). Red and photographic infrared linear combinations for monitoring vegetation. *Remote Sensing of Environment*, 8(2), 127–150. <https://doi.org/10.1016/0034-4257(79)90013-0>
+- Weier, J. & Herring, D. (2000). Measuring Vegetation (NDVI & EVI). NASA Earth Observatory. <https://earthobservatory.nasa.gov/features/MeasuringVegetation>
 
 ---
 
