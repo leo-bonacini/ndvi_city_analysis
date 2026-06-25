@@ -4,8 +4,9 @@ ribeirao_preto_analysis.py
 ==========================
 10-year NDVI change detection for Ribeirão Preto, SP, Brazil (2015–2024).
 
-Tracks urban expansion and vegetation loss using Landsat 8/9 dry-season
-imagery (June–August) from Microsoft Planetary Computer.
+Tracks urban expansion and vegetation loss using Landsat 8/9 imagery
+fixed to August (peak dry season) from Microsoft Planetary Computer.
+Fixing the acquisition month reduces inter-year seasonality bias.
 No authentication required.
 
 Usage
@@ -44,9 +45,9 @@ from shapely import simplify as shp_simplify
 CITY_NAME  = "Ribeirão Preto, São Paulo, Brazil"
 STATE_NAME = "Estado de São Paulo, Brazil"
 YEARS      = [2015, 2017, 2019, 2021, 2023, 2024]
-DRY_START  = "06-01"   # June — dry season in the São Paulo interior
-DRY_END    = "08-31"   # August
-MAX_CLOUD  = 30        # % — lenient to guarantee coverage every year
+DRY_START  = "08-01"   # August — peak dry season, fixes month to reduce seasonality bias
+DRY_END    = "08-31"
+MAX_CLOUD  = 40        # % — slightly lenient: Landsat revisits every 16 days, ~2 scenes/month
 OUT        = Path("outputs")
 
 CLASSES: List[Tuple] = [

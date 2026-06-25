@@ -53,8 +53,8 @@ confounding effect of seasonal crop cycles on vegetation indices.
 ### Data source
 - **Landsat Collection 2 Level-2** via [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) — freely accessible, no authentication required.
 - Resolution: ~120 m/pixel (resampled to EPSG:4326).
-- Acquisition window: **June 1 – August 31** per year (dry season).
-- Cloud cover threshold: ≤ 30 %.
+- Acquisition window: **August 1–31** per year — fixes the month across all years to reduce inter-year seasonality bias. August is the peak dry month for the São Paulo interior (lowest rainfall, most cloud-free scenes).
+- Cloud cover threshold: ≤ 40 % (Landsat revisits every 16 days; ~2 scenes per month per path).
 - City boundary: **OpenStreetMap Nominatim** (© OpenStreetMap contributors, ODbL).
 
 ### Index
@@ -125,12 +125,12 @@ relative to the 2015 baseline. An NDVI above 0.4 generally indicates active,
 healthy vegetation; the city median dropped below that threshold by 2024.
 
 **Year-to-year variability is real but the trend is clear.**
-2021 and 2024 show particularly high bare/urban fractions (39.6 % and 33.1 %)
-partly due to sugarcane harvest cycles in the agricultural buffer zone around the
-city. 2023 appears greener (34.4 % dense), consistent with a post-harvest
-regrowth peak in the surrounding farmland. Despite this noise, the directional
-trend from 2015 to 2024 is unambiguous: **the city is getting hotter, brighter,
-and less green**.
+All acquisitions are fixed to August to minimise phenological drift, but
+residual variability remains: sugarcane ratoon cycles, inter-annual rainfall
+anomalies, and the exact acquisition day within August (up to ±15 days)
+can shift pixel fractions by a few percentage points. Despite this noise,
+the directional trend from 2015 to 2024 is unambiguous: **the city is
+getting hotter, brighter, and less green**.
 
 **Dense vegetation loss is the most concerning indicator.**
 21.1 % of the city area classified as dense vegetation in 2015. By 2024 that
