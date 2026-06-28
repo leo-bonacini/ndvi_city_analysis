@@ -27,11 +27,11 @@ and technology, with GDP per capita among the highest in the country's interior.
 | Economy | Sugarcane, soy, healthcare, tech | — |
 
 Population grew **+15.5 %** between the 2010 and 2022 Censuses (+94,000 people),
-reaching an estimated 728,400 by 2024. This sustained demographic pressure —
-averaging roughly 7,800 new residents per year — is the primary driver of the
+reaching an estimated 728,400 by 2024. This sustained demographic pressure,
+averaging roughly 7,800 new residents per year, is the primary driver of the
 land-cover changes captured in the satellite record below.
 
-The surrounding landscape is dominated by **sugarcane** and soy plantations —
+The surrounding landscape is dominated by **sugarcane** and soy plantations,
 making urban greenery within city limits particularly valuable, and particularly
 under pressure.
 
@@ -51,9 +51,9 @@ confounding effect of seasonal crop cycles on vegetation indices.
 ## Methodology
 
 ### Data source
-- **Landsat Collection 2 Level-2** via [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) — freely accessible, no authentication required.
+- **Landsat Collection 2 Level-2** via [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/), freely accessible, no authentication required.
 - Resolution: ~120 m/pixel (resampled to EPSG:4326).
-- Acquisition window: **August 1–31** per year — fixes the month across all years to reduce inter-year seasonality bias. August is the peak dry month for the São Paulo interior (lowest rainfall, most cloud-free scenes).
+- Acquisition window: **August 1–31** per year, fixes the month across all years to reduce inter-year seasonality bias. August is the peak dry month for the São Paulo interior (lowest rainfall, most cloud-free scenes).
 - Cloud cover threshold: ≤ 40 % (Landsat revisits every 16 days; ~2 scenes per month per path).
 - City boundary: **OpenStreetMap Nominatim** (© OpenStreetMap contributors, ODbL).
 
@@ -70,9 +70,9 @@ NDVI = (NIR − Red) / (NIR + Red)
 | 0.40 – 0.60 | Moderate vegetation |
 | 0.60 – 1.00 | Dense vegetation |
 
-Class thresholds follow Tucker (1979) and the classification scheme summarised by the NASA Earth Observatory (Weier & Herring, 2000) — see [References](#references).
+Class thresholds follow Tucker (1979) and the classification scheme summarised by the NASA Earth Observatory (Weier & Herring, 2000), see [References](#references).
 
-Pixels are clipped to the **official city boundary polygon** — no square bounding box.
+Pixels are clipped to the **official city boundary polygon**, no square bounding box.
 
 ---
 
@@ -118,7 +118,7 @@ Years: 2015, 2017, 2019, 2021, 2023, 2024.*
 
 **Urban expansion is the dominant signal.**
 Between 2015 and 2024, bare soil and urban surfaces increased by **+16 pp**,
-while dense vegetation collapsed by **−15.6 pp** — a near-perfect trade-off
+while dense vegetation collapsed by **−15.6 pp**, a near-perfect trade-off
 that reflects ongoing peripheral urbanisation along the city's northern,
 southern, and western fringes.
 
@@ -136,7 +136,7 @@ getting hotter, brighter, and less green**.
 
 **Dense vegetation loss is the most concerning indicator.**
 21.1 % of the city area classified as dense vegetation in 2015. By 2024 that
-figure had fallen to 5.5 % — a **−74 % reduction** in the city's highest-NDVI
+figure had fallen to 5.5 %, a **−74 % reduction** in the city's highest-NDVI
 areas. These are the urban parks, riparian galleries (Mogi-Guaçu tributaries),
 and remnant *cerrado* patches that provide the most ecosystem services: cooling,
 air filtration, and stormwater retention.
@@ -153,7 +153,7 @@ infrastructure over green belts.
 
 The loss of green cover has measurable public-health consequences: urban heat
 island effect intensifies, flooding risk increases as permeable surfaces disappear,
-and the cost of cooling buildings rises — ironically increasing carbon emissions
+and the cost of cooling buildings rises, ironically increasing carbon emissions
 in a city that prides itself on sugarcane-ethanol sustainability.
 
 ---
